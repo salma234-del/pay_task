@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:payment_task/Core/utils/app_sizes.dart';
+import 'package:payment_task/Features/home/presentation/views/widgets/income_and_outcome_card.dart';
 import 'package:payment_task/Features/home/presentation/views/widgets/total_balance_card.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -17,6 +18,8 @@ class HomeViewBody extends StatelessWidget {
           children: [
             SizedBox(height: 20),
             TotalBalanceCard(),
+            SizedBox(height: 15),
+            IncomeAndOutcomeCard(),
           ],
         ),
       ),

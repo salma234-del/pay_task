@@ -30,10 +30,10 @@ class TotalBalanceCard extends StatelessWidget {
                 style: AppStyles.styleRegular14,
               ),
               Text(
-                '\$25,000,40',
+                '\$25,000.40',
                 style: AppStyles.styleBold28,
               ),
-              SizedBox(height: 35),
+              SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
