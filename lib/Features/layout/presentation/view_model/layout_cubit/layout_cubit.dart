@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:payment_task/Features/home/presentation/views/home_view.dart';
 import 'package:payment_task/Features/layout/presentation/view_model/layout_cubit/layout_state.dart';
 
 class LayoutCubit extends Cubit<LayoutState> {
@@ -22,9 +23,7 @@ class LayoutCubit extends Cubit<LayoutState> {
   int currentIndex = 0;
 
   List<Widget> views = [
-    const Center(
-      child: Text('Home View'),
-    ),
+    const HomeView(),
     const Center(
       child: Text('Wallet View'),
     ),
