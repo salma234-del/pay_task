@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:payment_task/Core/global/theme/app_light_theme.dart';
+import 'package:payment_task/Features/layout/presentation/views/layout_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,9 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      theme: lightTheme,
+      home: const LayoutView(),
     );
   }
 }
