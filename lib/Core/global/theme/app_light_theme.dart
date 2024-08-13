@@ -10,6 +10,14 @@ ThemeData lightTheme = ThemeData.light().copyWith(
     elevation: 0,
     iconTheme: IconThemeData(color: AppColors.primary),
   ),
+  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+    elevation: 0,
+    selectedItemColor: AppColors.primary,
+    unselectedItemColor: AppColors.grey,
+    backgroundColor: AppColors.white,
+    showSelectedLabels: false,
+    showUnselectedLabels: false,
+  ),
   textTheme: ThemeData.light().textTheme.apply(
         fontFamily: AppConstants.kFontFamily,
       ),
