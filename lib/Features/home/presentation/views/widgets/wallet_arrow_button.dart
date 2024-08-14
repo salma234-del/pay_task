@@ -19,7 +19,7 @@ class WalletArrowButton extends StatelessWidget {
         child: const Icon(
           Icons.arrow_forward,
           color: AppColors.primary,
-          size: 15,
+          size: 18,
         ),
       ),
     );

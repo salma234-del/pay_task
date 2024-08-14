@@ -18,6 +18,14 @@ ThemeData lightTheme = ThemeData.light().copyWith(
     showSelectedLabels: false,
     showUnselectedLabels: false,
   ),
+  textButtonTheme: TextButtonThemeData(
+    style: TextButton.styleFrom(
+      foregroundColor: AppColors.secondary,
+      textStyle: const TextStyle(
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+  ),
   textTheme: ThemeData.light().textTheme.apply(
         fontFamily: AppConstants.kFontFamily,
       ),

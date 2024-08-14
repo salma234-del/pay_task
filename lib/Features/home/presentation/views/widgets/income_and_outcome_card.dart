@@ -39,7 +39,7 @@ class IncomeAndOutcomeCard extends StatelessWidget {
                       ),
                       Text(
                         '\$ 20,000',
-                        style: AppStyles.styleBold20,
+                        style: AppStyles.styleBold18,
                       ),
                     ],
                   ),
@@ -67,7 +67,7 @@ class IncomeAndOutcomeCard extends StatelessWidget {
                       ),
                       Text(
                         '\$ 17,000',
-                        style: AppStyles.styleBold20,
+                        style: AppStyles.styleBold18,
                       ),
                     ],
                   ),

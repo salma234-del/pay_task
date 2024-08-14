@@ -25,8 +25,8 @@ abstract class AppStyles {
     color: AppColors.white,
   );
 
-  static const TextStyle styleBold20 = TextStyle(
-    fontSize: 20,
+  static const TextStyle styleBold18 = TextStyle(
+    fontSize: 18,
     fontWeight: FontWeight.bold,
     color: AppColors.white,
   );
