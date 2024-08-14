@@ -14,7 +14,7 @@ class EarningsListView extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child: Row(
           children: List.generate(
-            3,
+            AppLists.earnings.length,
             (index) => Padding(
               padding: EdgeInsetsDirectional.only(
                 start: index == 0 ? AppSizes.defaultHorizontalPadding : 0,
