@@ -9,4 +9,5 @@ abstract class AppStrings {
   static const String seeAll = 'See All';
   static const String today = 'Today';
   static const String earnings = 'Earnings';
+  static const String wallet = 'Wallet';
 }
