@@ -10,4 +10,7 @@ abstract class AppStrings {
   static const String today = 'Today';
   static const String earnings = 'Earnings';
   static const String wallet = 'Wallet';
+  static const String visa = 'VISA';
+  static const String name = 'Name';
+  static const String exp = 'Exp';
 }

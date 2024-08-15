@@ -9,5 +9,5 @@ abstract class AppSizes {
       MediaQuery.of(context).size.width;
 
   static const double defaultHorizontalPadding = 20;
-  static const homeCardsBorderRadius = 12.0;
+  static const double homeCardsBorderRadius = 12.0;
 }

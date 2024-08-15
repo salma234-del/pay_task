@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:payment_task/Core/utils/app_assets.dart';
 import 'package:payment_task/Core/utils/app_colors.dart';
 import 'package:payment_task/Features/home/data/models/earning_model.dart';
+import 'package:payment_task/Features/wallet/data/models/visa_model.dart';
 import 'package:payment_task/models/transaction_model.dart';
 
 abstract class AppLists {
@@ -58,6 +59,22 @@ abstract class AppLists {
       description: 'Salary',
       amount: 32,
       image: AppAssets.transaction2,
+    ),
+  ];
+
+  // This list will come from the database
+  static List<VisaModel> visaCards = [
+    VisaModel(
+      cardNumber: '1234 **** **** 3458',
+      cardHolder: 'Salma Ahmed',
+      expiryDate: '12/24',
+      amount: 2540000,
+    ),
+    VisaModel(
+      cardNumber: '5789 **** **** 1234',
+      cardHolder: 'John Doe',
+      expiryDate: '5/25',
+      amount: 540000,
     ),
   ];
 }
