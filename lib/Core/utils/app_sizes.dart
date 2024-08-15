@@ -10,4 +10,5 @@ abstract class AppSizes {
 
   static const double defaultHorizontalPadding = 20;
   static const double homeCardsBorderRadius = 12.0;
+  static const double defaultButtonRadius = 10.0;
 }

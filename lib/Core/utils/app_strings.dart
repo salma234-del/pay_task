@@ -13,4 +13,6 @@ abstract class AppStrings {
   static const String visa = 'VISA';
   static const String name = 'Name';
   static const String exp = 'Exp';
+  static const String profile = 'Profile';
+  static const String editProfile = 'Edit Profile';
 }
