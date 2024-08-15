@@ -3,7 +3,7 @@ import 'package:payment_task/Core/utils/app_assets.dart';
 import 'package:payment_task/Core/utils/app_colors.dart';
 import 'package:payment_task/Features/home/data/models/earning_model.dart';
 import 'package:payment_task/Features/wallet/data/models/visa_model.dart';
-import 'package:payment_task/models/transaction_model.dart';
+import 'package:payment_task/Core/models/transaction_model.dart';
 
 abstract class AppLists {
   // To generate the colors for the earnings list

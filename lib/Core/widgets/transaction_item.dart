@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:payment_task/Core/utils/app_colors.dart';
 import 'package:payment_task/Core/utils/app_sizes.dart';
 import 'package:payment_task/Core/utils/app_styles.dart';
-import 'package:payment_task/models/transaction_model.dart';
+import 'package:payment_task/Core/models/transaction_model.dart';
 
 class TransactionItem extends StatelessWidget {
   const TransactionItem({
