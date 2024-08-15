@@ -1,12 +1,10 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:payment_task/Core/bloc/bloc_observer.dart';
 import 'package:payment_task/Core/global/theme/app_light_theme.dart';
+import 'package:payment_task/Core/helper_functions/init_main.dart';
 import 'package:payment_task/Features/layout/presentation/views/layout_view.dart';
 
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  Bloc.observer = MyBlocObserver();
+void main() async {
+  await initMain();
   runApp(const MyApp());
 }
 

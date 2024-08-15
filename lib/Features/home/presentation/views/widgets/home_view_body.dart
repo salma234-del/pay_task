@@ -5,7 +5,7 @@ import 'package:payment_task/Core/utils/app_strings.dart';
 import 'package:payment_task/Core/utils/app_styles.dart';
 import 'package:payment_task/Features/home/presentation/views/widgets/earnings_list_view.dart';
 import 'package:payment_task/Features/home/presentation/views/widgets/home_section_title.dart';
-import 'package:payment_task/Core/widgets/transactions_list_view.dart';
+import 'package:payment_task/Features/home/presentation/views/widgets/home_transactions_list_view.dart';
 import 'package:payment_task/Features/home/presentation/views/widgets/income_and_outcome_card.dart';
 import 'package:payment_task/Features/home/presentation/views/widgets/total_balance_card.dart';
 
@@ -53,7 +53,7 @@ class HomeViewBody extends StatelessWidget {
                   style: AppStyles.styleMedium14,
                 ),
                 const SizedBox(height: 10),
-                const TransactionsListView(),
+                const HomeTransactionsListView(),
               ],
             ),
           )

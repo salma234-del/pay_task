@@ -18,8 +18,8 @@ class LayoutView extends StatelessWidget {
             body: cubit.views[cubit.currentIndex],
             bottomNavigationBar: ClipRRect(
               borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(30),
-                topRight: Radius.circular(30),
+                topLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
               ),
               child: BottomNavigationBar(
                 items: cubit.bottomNavItems,
