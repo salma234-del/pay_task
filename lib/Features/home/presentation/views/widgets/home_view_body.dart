@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:payment_task/Core/utils/app_sizes.dart';
+import 'package:payment_task/Core/utils/app_strings.dart';
+import 'package:payment_task/Core/utils/app_styles.dart';
+import 'package:payment_task/Features/home/presentation/views/widgets/earnings_list_view.dart';
+import 'package:payment_task/Features/home/presentation/views/widgets/home_section_title.dart';
+import 'package:payment_task/Core/widgets/transactions_list_view.dart';
+import 'package:payment_task/Features/home/presentation/views/widgets/income_and_outcome_card.dart';
 import 'package:payment_task/Features/home/presentation/views/widgets/total_balance_card.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -8,17 +14,50 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: AppSizes.defaultHorizontalPadding,
-        ),
-        child: Column(
-          children: [
-            SizedBox(height: 20),
-            TotalBalanceCard(),
-          ],
-        ),
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSizes.defaultHorizontalPadding,
+            ),
+            child: Column(
+              children: [
+                const SizedBox(height: 20),
+                const TotalBalanceCard(),
+                const SizedBox(height: 15),
+                const IncomeAndOutcomeCard(),
+                const SizedBox(height: 20),
+                HomeSectionTitle(
+                  sectionTtitle: AppStrings.earnings,
+                  seeAllOnPressed: () {},
+                ),
+              ],
+            ),
+          ),
+          const EarningsListView(),
+          const SizedBox(height: 15),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSizes.defaultHorizontalPadding,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                HomeSectionTitle(
+                  sectionTtitle: AppStrings.transactions,
+                  seeAllOnPressed: () {},
+                ),
+                const Text(
+                  AppStrings.today,
+                  style: AppStyles.styleMedium14,
+                ),
+                const SizedBox(height: 10),
+                const TransactionsListView(),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
